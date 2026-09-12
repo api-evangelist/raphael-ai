@@ -1,0 +1,47 @@
+name: Raphael AI
+description: >-
+  A free, no-signup AI image and video generator (text-to-image, image-to-image, image editing, outpaint, background
+  removal, text-to-video, image-to-video) that aggregates multiple underlying models. Currently exposes an llms.txt but
+  no public API, MCP server, or agent skills.
+url: https://raw.githubusercontent.com/api-evangelist/raphael-ai/refs/heads/main/apis.yml
+created: '2026-09-12'
+modified: '2026-09-12'
+specificationVersion: '0.21'
+tags:
+  - AI
+  - image generation
+  - text-to-image
+  - image-to-image
+  - image editing
+  - video generation
+  - generative media
+  - model aggregator
+apis:
+  - name: Raphael AI
+    description: >-
+      Consumer AI image and video generation product. No public API is offered yet (stated as coming in the near
+      future); the only machine-readable surface is an llms.txt product/marketing discovery index.
+    humanURL: https://raphael.app
+    baseURL: https://raphael.app
+    tags:
+      - AI
+      - image generation
+      - text-to-image
+      - image-to-image
+      - image editing
+      - video generation
+      - generative media
+      - model aggregator
+    properties:
+      - type: LLMsTxt
+        url: https://raphael.app/llms.txt
+      - type: Documentation
+        url: https://raphael.app/pricing
+maintainers:
+  - FN: Raphael AI
+    url: https://raphael.app
+generated:
+  by: apis.io/add
+  model: claude-opus-4-8
+  confidence: 90
+  at: '2026-09-12T17:58:45.634Z'

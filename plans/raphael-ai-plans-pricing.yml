@@ -1,0 +1,79 @@
+generated: '2026-09-13'
+method: searched
+source: https://raphael.app/pricing
+note: >-
+  Consumer subscription plans read from the live pricing page. These are product
+  subscription tiers, not API plans: Raphael AI publishes no public API (the
+  pricing FAQ states "No, we don't have a public API at the moment but will be
+  offering one in the near future"), so no per-call/API quota exists. Prices are
+  promotional (a 50% discount was applied at fetch time); both the list and
+  discounted figures are recorded. The llms.txt names only Free/Pro/Ultimate,
+  while the live pricing page also shows a Max tier — the pricing page is treated
+  as authoritative.
+currency: USD
+plan_count: 4
+plans:
+  - name: Free
+    price: 0
+    currency: USD
+    billing_period: none
+    note: >-
+      No account or credit card required. Genuinely unlimited standard-quality
+      image and video generation. No commercial-use rights (paid tiers only).
+  - name: Pro
+    price_monthly: 20
+    price_monthly_promo: 10
+    price_yearly: 240
+    price_yearly_promo: 120
+    currency: USD
+    billing_period: monthly-or-yearly
+    included:
+      monthly_credits: 2000
+      fast_images_up_to: 2000
+      basic_videos_up_to: 250
+      seedream_3_5: unlimited
+    features:
+      - priority queue
+      - no watermarks
+      - batch AI image upscaling
+      - advanced model access (MiniMax H3, Gemini, Nano Banana, GPT, Seedream, Veo, Seedance 2.5, Kling)
+      - commercial use of generated images
+  - name: Ultimate
+    price_monthly: 40
+    price_monthly_promo: 20
+    price_yearly: 480
+    price_yearly_promo: 240
+    currency: USD
+    billing_period: monthly-or-yearly
+    recommended: true
+    included:
+      monthly_credits: 5000
+      fast_images_up_to: 5000
+      basic_videos_up_to: 625
+      seedream_3_5: unlimited
+    features:
+      - highest priority queue
+      - no watermarks
+      - batch AI image upscaling
+      - full privacy mode
+      - advanced model access
+      - commercial use of generated images
+  - name: Max
+    price_monthly: 80
+    price_monthly_promo: 40
+    price_yearly: 960
+    price_yearly_promo: 480
+    currency: USD
+    billing_period: monthly-or-yearly
+    included:
+      monthly_credits: 10000
+      fast_images_up_to: 10000
+      basic_videos_up_to: 1250
+      seedream_3_5: unlimited
+    features:
+      - highest priority queue
+      - no watermarks
+      - batch AI image upscaling
+      - full privacy mode
+      - advanced model access
+      - commercial use of generated images

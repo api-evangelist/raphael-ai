@@ -1,0 +1,34 @@
+generated: '2026-09-13'
+method: probed
+source: >-
+  Probed the standard /.well-known/ discovery paths on the sole official host
+  (raphael.app). All returned HTTP 404 with an HTML body. api.raphael.app does
+  not resolve (NXDOMAIN), so no API host was available to probe. No served
+  document was found; no WellKnown pointer is emitted.
+hosts:
+  - host: raphael.app
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null

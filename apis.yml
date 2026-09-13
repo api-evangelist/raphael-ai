@@ -1,12 +1,14 @@
 name: Raphael AI
 description: >-
   A free, no-signup AI image and video generator (text-to-image, image-to-image, image editing, outpaint, background
-  removal, text-to-video, image-to-video) that aggregates multiple underlying models. Currently exposes an llms.txt but
-  no public API, MCP server, or agent skills.
+  removal, text-to-video, image-to-video) that aggregates multiple underlying models (Nano Banana, Seedream, GPT Image,
+  Veo, Kling and more). Currently exposes an llms.txt product/marketing index but no public API, MCP server, or agent
+  skills; the provider states a public API is planned for the near future.
 url: https://raw.githubusercontent.com/api-evangelist/raphael-ai/refs/heads/main/apis.yml
 created: '2026-09-12'
-modified: '2026-09-12'
+modified: '2026-09-13'
 specificationVersion: '0.21'
+position: Producing
 tags:
   - AI
   - image generation
@@ -35,13 +37,45 @@ apis:
     properties:
       - type: LLMsTxt
         url: https://raphael.app/llms.txt
-      - type: Documentation
-        url: https://raphael.app/pricing
+      - type: Plans
+        url: plans/raphael-ai-plans-pricing.yml
+common:
+  - type: Website
+    url: https://raphael.app
+  - type: Pricing
+    url: https://raphael.app/pricing
+  - type: PrivacyPolicy
+    url: https://raphael.app/privacy
+  - type: TermsOfService
+    url: https://raphael.app/tos
 maintainers:
   - FN: Raphael AI
     url: https://raphael.app
+    email: support@raphael.app
 generated:
   by: apis.io/add
   model: claude-opus-4-8
   confidence: 90
   at: '2026-09-12T17:58:45.634Z'
+x-enrichment:
+  date: '2026-09-13'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Raphael AI is a consumer AI image/video web app; its own pricing FAQ states "we don't have a public API at the
+    moment but will be offering one in the near future," and no API host exists (api.raphael.app is NXDOMAIN). The only
+    machine-readable surface is a marketing llms.txt.
+  evidence:
+    - url: https://raphael.app/pricing
+      status: 200
+    - url: https://raphael.app/openapi.json
+      status: 404
+    - url: https://raphael.app/mcp
+      status: 404
+    - url: https://raphael.app/.well-known/agent-card.json
+      status: 404
+  checked: '2026-09-13'

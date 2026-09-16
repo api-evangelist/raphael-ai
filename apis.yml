@@ -10,6 +10,15 @@ modified: '2026-09-13'
 specificationVersion: '0.21'
 position: Producing
 tags:
+  - Artificial Intelligence
+  - Image-Generation
+  - Text-to-Image
+  - Image to Image
+  - Image Editing
+  - Video Generation
+  - Generative Media
+  - Model Aggregator
+tags_raw:
   - AI
   - image generation
   - text-to-image
@@ -26,6 +35,15 @@ apis:
     humanURL: https://raphael.app
     baseURL: https://raphael.app
     tags:
+      - Artificial Intelligence
+      - Image-Generation
+      - Text-to-Image
+      - Image to Image
+      - Image Editing
+      - Video Generation
+      - Generative Media
+      - Model Aggregator
+    tags_raw:
       - AI
       - image generation
       - text-to-image

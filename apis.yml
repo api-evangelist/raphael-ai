@@ -11,7 +11,7 @@ specificationVersion: '0.21'
 position: Producing
 tags:
   - Artificial Intelligence
-  - Image-Generation
+  - Image Generation
   - Text-to-Image
   - Image to Image
   - Image Editing
@@ -27,16 +27,17 @@ tags_raw:
   - video generation
   - generative media
   - model aggregator
+  - Image-Generation
 apis:
-  - name: Raphael AI
+  - x-published: false
+    name: Raphael AI
     description: >-
       Consumer AI image and video generation product. No public API is offered yet (stated as coming in the near
       future); the only machine-readable surface is an llms.txt product/marketing discovery index.
     humanURL: https://raphael.app
-    baseURL: https://raphael.app
     tags:
       - Artificial Intelligence
-      - Image-Generation
+      - Image Generation
       - Text-to-Image
       - Image to Image
       - Image Editing
@@ -52,6 +53,7 @@ apis:
       - video generation
       - generative media
       - model aggregator
+      - Image-Generation
     properties:
       - type: LLMsTxt
         url: https://raphael.app/llms.txt

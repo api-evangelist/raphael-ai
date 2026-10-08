@@ -60,6 +60,8 @@ apis:
       - type: Plans
         url: plans/raphael-ai-plans-pricing.yml
 common:
+  - type: Plans
+    url: plans/raphael-ai-plans-pricing.yml
   - type: Website
     url: https://raphael.app
   - type: Pricing
